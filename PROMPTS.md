@@ -18,13 +18,13 @@ If delegation is unavailable or setup takes more than five minutes, use the sepa
 
 ### Two builders
 
-Replace `[PYTHON]` with your working command, such as `py`, before sending.
+Replace [PYTHON] with your working command, such as `py`, before sending.
 
 ```text
 Read AGENTS.md, SPEC.md, POLICY.md, PLAN.md and the Python files.
 Confirm the workspace folder containing models.py and SPEC.md.
 Use workspace-relative paths and the actual terminal shell.
-My working Python command is [PYTHON].
+My working Python command is py.
 
 Actually delegate to two separate implementation workers using the
 available subagent or delegated-session tool. Do not simulate roles
@@ -45,8 +45,8 @@ Wait for both workers to finish. Inspect the actual files before
 integrating anything: do not reapply code already written there.
 If outputs are elsewhere, integrate only the two owned files.
 Then run from the folder containing models.py:
-[PYTHON] -m unittest -v
-[PYTHON] app.py
+py -m unittest -v
+py app.py
 
 Report the worker executions, changed files, actual command output
 and unresolved issues. Do not claim success for a failed command.
